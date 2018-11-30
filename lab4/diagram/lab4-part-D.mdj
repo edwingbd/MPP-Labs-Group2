@@ -1442,7 +1442,7 @@
 														"$ref": "AAAAAAFnYgNt7xxZgtg="
 													},
 													"edgePosition": 1,
-													"text": "5 : *getOrderData"
+													"text": "5 : getOrderData"
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -2036,7 +2036,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFnYe2O7xmPeqs="
 									},
-									"name": "*getOrderData",
+									"name": "getOrderData",
 									"source": {
 										"$ref": "AAAAAAFnYfj3mhq9gwc="
 									},

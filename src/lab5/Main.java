@@ -1,10 +1,11 @@
 package lab5;
 
+import java.awt.List;
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Duck[] ducks= {new MallardDuck(),new DecoyDuck(),new RedheadDuck(),new RubberDuck()};
 		
 		for(Duck d:ducks) {
@@ -14,8 +15,9 @@ public class Main {
 			d.display();
 			d.fly();
 			d.quack();
-			d.swin();
+			d.swim();
 		}
+		
 	}
 
 }

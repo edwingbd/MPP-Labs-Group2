@@ -1,11 +1,8 @@
 package lab5;
 
-public class Squeak extends QuackBehavior{
-
-	@Override
+public class Squeak implements QuackBehavior {
 	public void quack() {
-		// TODO Auto-generated method stub
-		System.out.println("squeaking");
+		System.out.println("This duck is queak");
 	}
 
 }

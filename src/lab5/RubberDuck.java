@@ -1,15 +1,15 @@
 package lab5;
 
-public class RubberDuck extends Duck {
+import java.awt.print.Printable;
 
+public class RubberDuck extends Duck{
 	public RubberDuck() {
-		this.setFlyBehavior(new CannotFly());
+		this.setFlyBehavior(new Cannotfly());
 		this.setQuackBehavior(new Squeak());
 	}
+	
 	@Override
 	public void display() {
-		// TODO Auto-generated method stub
-		System.out.println("displaying");
+		System.out.println("This is a RumberDuck");
 	}
-
 }

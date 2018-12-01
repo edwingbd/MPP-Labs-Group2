@@ -1,27 +1,28 @@
 package lab5;
 
 public abstract class Duck {
+	
+	private FlyBehavior flyBehavior;
+	private QuackBehavior quackBehavior;
 
-	private IFlyBehavior flyable=new CannotFly();
-	private IQuackBehavior quackable=new MuteQuack();
+	
+	public void setQuackBehavior(QuackBehavior quackBehavior) {
+		this.quackBehavior = quackBehavior;
+	}
+	public void swim() {
+		System.out.println("This duck is swim");
+	}	
+	public void display() {}
+		
+	public void setFlyBehavior(FlyBehavior flyBehavior) {
+		this.flyBehavior = flyBehavior;
+	}
 	public void quack() {
-		quackable.quack();
+		quackBehavior.quack();
 	}
-	
 	public void fly() {
-		flyable.fly();
+		flyBehavior.fly();
 	}
+
 	
-	public void setFlyBehavior(IFlyBehavior Behavior) {
-		this.flyable=Behavior;
-	}
-	
-	public void setQuackBehavior(IQuackBehavior Behavior) {
-		this.quackable=Behavior;
-	}
-	
-	public abstract void display();
-	void swin() {
-		System.out.println("swimming");
-	}
 }

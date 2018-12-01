@@ -1,12 +1,8 @@
 package lab5;
 
-public class FlyWithWings extends FlyBehavior {
-
-	@Override
+public class FlyWithWings implements FlyBehavior {
 	public void fly() {
-		// TODO Auto-generated method stub
-		System.out.println("fly with wings");
-		
+		System.out.println("This duck is fly");
 	}
 
 }

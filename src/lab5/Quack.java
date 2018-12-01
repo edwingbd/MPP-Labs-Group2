@@ -1,11 +1,8 @@
 package lab5;
 
-public class Quack extends QuackBehavior{
-
-	@Override
+public class Quack  implements QuackBehavior {
 	public void quack() {
-		// TODO Auto-generated method stub
-		System.out.println("quacking");
+		System.out.println("This is a quack");
 	}
 
 }

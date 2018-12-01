@@ -1,7 +1,7 @@
 package lab5;
 
 public class MallardDuck extends Duck {
-
+	
 	public MallardDuck() {
 		this.setFlyBehavior(new FlyWithWings());
 		this.setQuackBehavior(new Quack());
@@ -9,8 +9,6 @@ public class MallardDuck extends Duck {
 	
 	@Override
 	public void display() {
-		// TODO Auto-generated method stub
-		System.out.println("display");
+		System.out.println("This is a MallardDuck");
 	}
-
 }
